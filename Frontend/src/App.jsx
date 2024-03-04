@@ -53,10 +53,10 @@ const Home = () => {
     <div className="container mx-auto py-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
       <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center">Sentiment Analysis in Azerbaijani Language</h1>
       <div className='author my-4 text-center text-sm'>
-        <p className= "text-sm">
+        <p className= "text-sm font-bold">
           Made by Kamal Ahmadov
         </p>
-        <a href="https://github.com/Kamal578/SentimentAnalysis" target="_blank" rel="noreferrer" className='flex items-center justify-center gap-2 hover:text-bold'>
+        <a href="https://github.com/Kamal578/SentimentAnalysis" target="_blank" rel="noreferrer" className='flex items-center justify-center gap-2 hover:font-bold transition-all hover:text-blue-700'>
           <img src={github} alt="github" className="w-6 h-6" /> Source Code
         </a>
       </div>
