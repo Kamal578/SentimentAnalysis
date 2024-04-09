@@ -18,7 +18,8 @@ const Home = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.get(`https://fastapi-production-8770.up.railway.app/predict?sentence=${encodeURIComponent(sentence)}`);
+      // const response = await axios.get(`https://fastapi-production-8770.up.railway.app/predict?sentence=${encodeURIComponent(sentence)}`);
+      const response = await axios.get(`https://localhost:8000/predict?sentence=${encodeURIComponent(sentence)}`);
       const { sentiment_score, sentiment } = response.data;
       setSentimentScore(sentiment_score);
       setSentiment(sentiment);

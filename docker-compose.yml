@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  client:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Map port 3000 on host to port 3000 on container
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"  # Map port 8000 on host to port 8000 on container
