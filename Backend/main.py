@@ -66,5 +66,5 @@ if __name__ == "__main__":
     from hypercorn.config import Config
     from hypercorn.asyncio import serve
 
-    config = Config.from_str("host=127.0.0.1 port=8000")
+    config = Config.from_str("host=localhost port=8000")
     serve(app, config)
